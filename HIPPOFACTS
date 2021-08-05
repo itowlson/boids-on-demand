@@ -6,3 +6,9 @@ authors = ["Ivan Towlson"]
 [[handler]]
 route = "/"
 name = "target/wasm32-wasi/release/boids-on-demand.wasm"
+
+[[handler]]
+route = "/assets/..."
+external.bindleId = "fileserver/0.4.0"
+external.handlerId = "static"
+files = ["images/*.*"]
